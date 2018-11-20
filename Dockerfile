@@ -5,11 +5,8 @@ ENV HTTP https://confluence.ecmwf.int/download/attachments/45757960
 ENV ECCODES eccodes-2.9.2-Source
 
 RUN apt-get update && apt-get install -y \
-#  gcc \
   gfortran \
-#  g++ \
   cmake \
-#  build-essential \
   && rm -rf /var/lib/apt/lists/* \
   && pip install numpy pyproj
 
